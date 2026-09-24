@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rak Buku Saya</title>
+</head>
+<body>
+
+  <header>
+    <h1>Rak Buku Saya</h1>
+    <nav aria-label="Navigasi Utama">
+      <ul>
+        <li><a href="#daftar-buku">Daftar Buku</a></li>
+        <li><a href="#tambah-buku">Tambah Buku</a></li>
+        <li><a href="#tentang-pemilik">Tentang Saya</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="daftar-buku">
+      <h2>Daftar Buku</h2>
+      <p>Koleksi buku fiksi dan non-fiksi pribadi beserta status pembacaannya.</p>
+
+      <figure>
+        <img src="koleksi-1.webp" alt="Foto rak kayu berisi barisan buku tersusun rapi secara vertikal" width="640" height="360" loading="lazy">
+        <figcaption>Koleksi buku pribadi di rak.</figcaption>
+      </figure>
+
+      <table>
+        <caption>Daftar Koleksi Buku Saya</caption>
+        <thead>
+          <tr>
+            <th scope="col">Judul</th>
+            <th scope="col">Penulis</th>
+            <th scope="col">Tahun Terbit</th>
+            <th scope="col">Status Baca</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Filosofi Teras</th>
+            <td>Henry Manampiring</td>
+            <td>2018</td>
+            <td>Selesai</td>
+          </tr>
+          <tr>
+            <th scope="row">Atomic Habits</th>
+            <td>James Clear</td>
+            <td>2019</td>
+            <td>Selesai</td>
+          </tr>
+          <tr>
+            <th scope="row">Bumi Manusia</th>
+            <td>Pramoedya Ananta Toer</td>
+            <td>1980</td>
+            <td>Sedang Dibaca</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="tambah-buku">
+      <h2>Tambah Buku</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="judul">Judul Buku:</label><br>
+          <input type="text" id="judul" name="judul" required placeholder="Masukkan judul buku">
+        </p>
+        <p>
+          <label for="penulis">Penulis:</label><br>
+          <input type="text" id="penulis" name="penulis" required placeholder="Nama penulis">
+        </p>
+        <p>
+          <label for="status">Status Baca:</label><br>
+          <input type="text" id="status" name="status" required placeholder="Selesai / Sedang Dibaca">
+        </p>
+        <p>
+          <button type="submit">Simpan Buku</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="tentang-pemilik">
+    <p>&copy; 2026 Raditya Rismawanda · NIM: 25523127 · Kelas B</p>
+  </footer>
+
+</body>
+</html>
