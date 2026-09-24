@@ -2,6 +2,7 @@
 
 Berkas gaya yang akan dibuat: `tokens.css`, `base.css`, `layout.css`, `komponen.css`, `tema.css`
 
+* **Warna utama:** `#2563eb` (biru), dipilih karena memberikan kesan profesional, modern, dan memiliki kontras yang baik untuk keterbacaan teks/tombol.
 
 ### Token yang saya tetapkan
 
@@ -13,6 +14,7 @@ Berkas gaya yang akan dibuat: `tokens.css`, `base.css`, `layout.css`, `komponen.
 | `--radius-md` | `0.5rem` | sudut tombol dan kartu |
 | `--space-4` | `1rem` | jarak standar antar elemen |
 
+* **Kriteria selesai saya:** mengubah `--color-primary` di satu baris harus mengubah warna tombol, tautan, judul, dan garis fokus.
 
 # pabw-praktikum
 

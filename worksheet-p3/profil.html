@@ -4,10 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rak Buku Saya - Profil</title>
+
+  <!-- Hubungkan CSS Token dan Stylesheet -->
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Lembar C: Header & Navigasi -->
+  <!-- Header & Navigasi -->
   <header>
     <h1>Koleksi Rak Buku Pribadi</h1>
     <nav aria-label="Navigasi utama">
@@ -19,7 +23,7 @@
   </header>
 
   <main>
-    <!-- Lembar D: Tabel Data & Gambar -->
+    <!-- Tabel Data & Gambar -->
     <section id="tabel-buku">
       <h2>Daftar Koleksi Buku</h2>
 
@@ -67,7 +71,7 @@
       </figure>
     </section>
 
-    <!-- Lembar E: Form & Validasi -->
+    <!-- Form & Validasi -->
     <section id="form-tambah">
       <h2>Tambah Buku ke Koleksi</h2>
 
@@ -87,89 +91,20 @@
           <input type="number" id="jumlah-halaman" name="jumlah-halaman" min="1" max="5000" required>
         </p>
 
+        <p>
+          <label for="tanggal-selesai">Tanggal Selesai Dibaca:</label>
+          <input type="date" id="tanggal-selesai" name="tanggal-selesai">
+        </p>
+
         <button type="submit">Simpan Buku</button>
       </form>
     </section>
   </main>
 
-  <!-- Lembar C: Footer -->
+  <!-- Footer -->
   <footer>
     <p>Raditya Rismawanda · 25523127 · 2026</p>
   </footer>
 
 </body>
-</html><body>
-  <header>
-    <h1>Koleksi Rak Buku Saya</h1>
-    <nav aria-label="Navigasi utama">
-      <ul>
-        <li><a href="#tabel-buku">Daftar Buku</a></li>
-        <li><a href="#form-tambah">Tambah Buku</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="tabel-buku">
-      <h2>Daftar Koleksi Buku</h2>
-      <!-- Tabel dan gambar akan diisi pada Lembar D -->
-    </section>
-
-    <section id="form-tambah">
-      <h2>Tambah Buku ke Koleksi</h2>
-      <!-- Form akan diisi pada Lembar E -->
-    </section>
-  </main>
-
-  <footer>
-    <p>Raditya Rismawanda · 25523127 · 2026</p>
-  </footer>
-</body>
-<table>
-  <caption>Judul tabel Anda</caption>
-  <thead>
-    <tr>
-      <th scope="col">Kolom 1</th>
-      <th scope="col">Kolom 2</th>
-      <th scope="col">Kolom 3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">Baris 1</th>
-      <td>Isi</td>
-      <td>Isi</td>
-    </tr>
-    <!-- tambahkan minimal dua baris lagi -->
-  </tbody>
-</table>
-<figure>
-  <img src="https://picsum.photos/640/360" 
-       alt="Jajaran buku tersusun rapi di atas rak kayu bernuansa cokelat hangat" 
-       width="640" 
-       height="360" 
-       loading="lazy">
-  <figcaption>Dokumentasi rak buku pribadi di sudut ruang kerja.</figcaption>
-</figure>
-<section id="form-tambah">
-  <h2>Tambah Buku ke Koleksi</h2>
-
-  <form action="/simpan" method="post">
-    <p>
-      <label for="judul-buku">Judul Buku</label>
-      <input type="text" id="judul-buku" name="judul_buku" required>
-    </p>
-
-    <p>
-      <label for="jumlah-halaman">Jumlah Halaman</label>
-      <input type="number" id="jumlah-halaman" name="jumlah_halaman" min="1" required>
-    </p>
-
-    <p>
-      <label for="tanggal-selesai">Tanggal Selesai Dibaca</label>
-      <input type="date" id="tanggal-selesai" name="tanggal_selesai">
-    </p>
-
-    <button type="submit">Simpan</button>
-  </form>
-</section>
+</html>
